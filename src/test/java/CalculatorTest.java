@@ -27,10 +27,17 @@ public class CalculatorTest {
     }
 
     @Test
-    public void multipliy() {
+    public void multiply() {
         int x = 2;
         int y = 4;
         assertEquals(8, calculator.canMultiply(x,y));
+    }
+
+    @Test
+    public void divide() {
+        double x = 10;
+        double y = 2;
+        assertEquals(5, calculator.canDivide(x,y),0.01);
     }
 
 }
