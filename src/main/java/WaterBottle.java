@@ -1,16 +1,24 @@
 public class WaterBottle {
-    private float volume;
+    private int volume;
 
 
-    public WaterBottle(float volume) {
-        this.volume = volume;
+    public WaterBottle() {
+        this.volume = 100;
     }
 
-    public float getVolume() {
+    public int getVolume() {
         return this.volume;
     }
 
-    public double startingValue() {
-        return 100;
+    public int minusTen() {
+        return this.volume - 10;
+    }
+
+    public int emptyBottle() {
+        return this.volume = 0;
+    }
+
+    public int fullBottle() {
+        return this.volume = 100;
     }
 }

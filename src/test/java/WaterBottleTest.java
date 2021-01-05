@@ -9,17 +9,27 @@ public class WaterBottleTest {
 
     @Before
     public void setUp() {
-        waterBottle = new WaterBottle(50);
+        waterBottle = new WaterBottle();
     }
 
     @Test
     public void hasVolume() {
-        assertEquals(50, waterBottle.getVolume(), 0.01);
+        assertEquals(100, waterBottle.getVolume(), 0.01);
     }
 
     @Test
-    public void startsAt100() {
-        assertEquals(100, waterBottle.startingValue(), 0.01);
+    public void drink() {
+        assertEquals(90, waterBottle.minusTen(), 0.01);
+    }
+
+    @Test
+    public void empty() {
+        assertEquals(0, waterBottle.emptyBottle(), 0.01);
+    }
+
+    @Test
+    public void fill() {
+        assertEquals(100, waterBottle.fullBottle(), 0.01);
     }
 
 }
