@@ -10,4 +10,7 @@ public class WaterBottle {
         return this.volume;
     }
 
+    public double startingValue() {
+        return 100;
+    }
 }
