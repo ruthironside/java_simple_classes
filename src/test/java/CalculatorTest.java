@@ -26,4 +26,11 @@ public class CalculatorTest {
         assertEquals(5, calculator.canSubtract(x,y));
     }
 
+    @Test
+    public void multipliy() {
+        int x = 2;
+        int y = 4;
+        assertEquals(8, calculator.canMultiply(x,y));
+    }
+
 }
